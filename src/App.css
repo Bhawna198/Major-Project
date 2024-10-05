@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    transition: background-color 1s ease; /* Smooth transition for background color */
+  }
+  
+  /* Container */
+  .container {
+    height: 200vh; /* Height for two full sections */
+    transition: background-color 1s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  /* Background color for white and black section hover */
+  .bg-black {
+    background-color: #000000 !important;
+    color: white;
+  }
+  
+  .bg-white {
+    background-color: #ffffff !important;
+    color: black;
+  }
+  
+  /* Header Styling */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .header nav ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .header nav ul li:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  /* Common section styles */
+  .section {
+    height: 100vh; /* Each section takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.7s ease, transform 0.5s ease; /* Transition for opacity and position */
+  }
+  
+  /* White Section */
+  .white {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  /* Black Section */
+  .black {
+    background-color: #000000;
+    color: white;
+  }
+  
+  /* Text fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards; /* Fade in animation */
+    animation-delay: 0.2s; /* Delay for smooth effect */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Text hover animation */
+  .hover-animate {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hover-animate:hover {
+    color: #ff6347; /* Change text color on hover */
+    transform: scale(1.1); /* Slight scale on hover */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
